@@ -1,23 +1,12 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import { configureNotification } from './services/firebase-messaging-sw'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      PWA Push Notifications <br />
+      <button onClick={configureNotification}>Configure Notification</button>
     </div>
   );
 }
